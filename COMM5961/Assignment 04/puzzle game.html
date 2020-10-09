@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMM5961 Assignment #4</title>
+        <style>
+        #puzzle {
+            float:inline-start;
+            padding-left:40px;
+        }
+        .form-group input {
+            width:20%;
+            margin-left:5px;
+        }
+        form#login #submitBtn {
+            padding:7px 14px;
+            background:white;
+            border:black solid 2px;
+        }
+
+        form#login #submitBtn:hover {
+            padding:7px 14px;
+            border:black solid 2px;
+            background:black;
+            color:white;
+        }
+        </style>
+    </head>
+    <body style="background-color:#F6F0CD;color:rgb(17, 92, 117)">
+        <center><h1 style="color:#294F12;width:50%;">My Assignment #4</h1></center>
+<body>
+    <h3 style="padding:20px">Welcome here! Let's play a puzzle game!</h3>
+            <div id='puzzle'>
+                        <form id='login'>
+                            <div class='form-group'>
+                                <label>
+                                    Please Enter Your Name:
+                                </label>
+                                <input type='text' name='username'>
+                            </div>
+                            <br>
+                            Question: 甚麼話是世界通用的？
+                            <div class='form-group'> 
+                            <label>
+                                <br>
+                                Your Answer:
+                            </label>
+                            <input type='text' name='pwd'>
+                            </div>
+                            <br>
+                            <button id='submitBtn' type='submit'>Check</button>
+                        </form>
+                        <br>
+            </div>
+            <script>
+                function checkanswer() {
+                 var username = document.forms[0].username.value;
+                 var password = document.forms[0].pwd.value;
+                 if (password == '電話') {alert("Congratulations " + username + "! This is correct!");} else {alert ("Sorry " + username + ", your answer is incorrect. You can try it again!");}
+                }
+                document.getElementById('submitBtn').addEventListener('click', checkanswer);
+            </script>
+    <br>
+    <center><a href="https://lh3.googleusercontent.com/proxy/XvGhAtiZbUp24xU8CV5hVGup83PAHe1qZ3ndRFYWTBkVMh1ZhstIXzXqiDX07dj8NJruWyvYcoAT9TQ9Mbnc9Y-KCGCj1Wa0P_0dGDujV_p6ioioSA" target="_blank">Show me the answer now!</a></center>
+</body>
+</html>
